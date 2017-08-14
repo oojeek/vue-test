@@ -1,0 +1,9 @@
+/.gradle
+/.idea
+/build
+/target
+*.iml
+*.setting
+gradle-app.setting
+*.log
+/**/machineInfo.properties

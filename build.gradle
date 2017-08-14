@@ -1,0 +1,26 @@
+group 'com.sealine'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'war'
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+repositories {
+//    mavenCentral()
+    maven {
+        url 'http://118.89.229.31:15796/nexus/content/groups/public/'
+    }
+}
+
+dependencies {
+    compile 'junit:junit:4.12'
+    providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
+    providedCompile 'javax.servlet.jsp:javax.servlet.jsp-api:2.3.0'
+    compile 'org.springframework:spring-webmvc:4.3.9.RELEASE'
+    compile 'org.aspectj:aspectjweaver:1.8.10'
+    compile 'org.aspectj:aspectjrt:1.8.10'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.8.9'
+}
