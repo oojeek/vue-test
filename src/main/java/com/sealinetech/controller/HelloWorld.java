@@ -17,7 +17,7 @@ import java.util.Map;
 public class HelloWorld {
     @RequestMapping("hello.do")
     @ResponseBody
-    public List<Map<String, Object>> Hello() {
+    public List<Map<String, Object>> hello() {
         //return "index";
         List<Map<String, Object>> list = new ArrayList<>();
         Map<String, Object> map1 = new HashMap<>();
@@ -33,5 +33,10 @@ public class HelloWorld {
         list.add(map2);
 
         return list;
+    }
+
+    @RequestMapping("index.do")
+    public String index() {
+        return "index";
     }
 }

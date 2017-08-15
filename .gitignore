@@ -2,8 +2,12 @@
 /.idea
 /build
 /target
+/out
 *.iml
 *.setting
 gradle-app.setting
 *.log
+*.txt
 /**/machineInfo.properties
+.DS_Store
+
